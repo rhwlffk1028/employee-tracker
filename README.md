@@ -3,7 +3,7 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-  
+  This project allows a business owner to view and manage the information of departments, roles, and employees in his or her company. This application uses SQL database technology to utilize and manage the data. Node package inquirer is used to provide user interface, where a user is prompted to view, add, or update the employee management system.
 
   ## Table of Contents
   * [Installation](#installation)
@@ -14,10 +14,18 @@
   * [Questions](#questions)
  
   ## Installation
-  
+  Fork this repo into your GitHub. Make sure the fork process has been completed without any issue by checking all files in your forked repo. Verify wheter you have node.js installed on your desktop or not by running the command `node -v` in your terminal. If you do not have node.js installed, please go to https://coding-boot-camp.github.io/full-stack/nodejs/how-to-install-nodejs and it will walk you through the process.
+
+You also need MySQL in order to run this application. If you do not have MySQL installed on your device, then please install and create an account.
+
+Once you completed the installation process, try to run `npm start`, it will probably give you an error BECAUSE the required dependencies are not installed yet into the root directory. Run `npm install` to install required dependancies (check package.json). Then, you should be able to run `npm start`.
 
   ## Usage
+First, make sure you are in the folder where SQL database files are saved. Then, run MySQL (`mysql -u {username} -p{password}`). While MySQL is running, run `source schema.sql;` followed by `source seeds.sql;`. This will create the existing tables in the database. Then run `exit` to quit from MySQL.
+
+Go back to the folder where index.js file is saved. Now, run `npm start` or `node index.js` to start the application. Please see the demo below:
   
+  ![demo](./assets/employee-tracker-demo.gif)
 
   
   ## License
@@ -40,10 +48,10 @@
   
 
   ## Contributing
-  
+  No contribution will be accepted at this moment.
 
   ## Tests
-  
+  There are no tests available in this application.
 
   ## Questions
   If you have any questions, please contact me via
